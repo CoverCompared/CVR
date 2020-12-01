@@ -1,0 +1,29 @@
+{
+  "name": "cvr_token",
+  "version": "1.0.0",
+  "description": "Base Contracts for CVR tokens",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "prettify:contracts": "npx prettier --write contracts/**/*.sol",
+    "prettify:test": "npx prettier --write test/*.js",
+    "prettify:migrations": "npx prettier --write migrations/*.js"
+  },
+  "keywords": [
+    "CVR",
+    "Polkacover"
+  ],
+  "author": "Akshay Meher",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.3.0",
+    "web3-utils": "^1.2.8"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.1"
+  }
+}
