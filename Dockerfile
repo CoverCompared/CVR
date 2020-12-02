@@ -14,4 +14,4 @@ RUN npm install
 # RUN npm audit
 
 COPY . /home/app
-CMD [ "ganache-cli","-a","50"]
+CMD [ "ganache-cli","-a","50", "-h", "0.0.0.0"]

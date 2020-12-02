@@ -80,7 +80,7 @@ contract("CVR Token", function (accounts) {
 
   it("Should be able to burn the tokens", function () {
     return tokenInstance
-      .burn(token.testMintValue, {from: accounts[1]})
+      .burn(token.testMintValue, { from: accounts[1] })
       .then(function () {
         return tokenInstance.totalSupply();
       })
